@@ -2,6 +2,7 @@
 
 import { useContext } from "react";
 import { SearchContext } from "./context/search";
+import LocationSelection from "./LocationSelection";
 const Search = () => {
   const { searchActive } = useContext(SearchContext);
   return (
@@ -12,7 +13,9 @@ const Search = () => {
           : "bg-white rounded-[20px] py-6 xl:pr-4 xl:h-[98px]"
       } hidden xl:block w-full relative shadow-lg`}
     >
-      Search
+      <div className="flex items-center px-6 xl:h-full xl:px-0">
+        <LocationSelection />
+      </div>
     </div>
   );
 };
