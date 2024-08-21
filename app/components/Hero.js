@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id="home">
       <div className="container h-full mx-auto xl:pt-10">hero container</div>
       {searchActive ? (
-        <div className="fixed top-[80px] z-10 wf max-w-[1920px]">
+        <div className="fixed top-[80px] z-10  w-full max-w-[1920px]">
           <Search />
         </div>
       ) : (

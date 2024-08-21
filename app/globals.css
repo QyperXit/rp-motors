@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrInStartEdge ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrInEndEdge ~ .rdrDayNumber span::after,
+.rdrDayToday:not(.rdrDayPassive) .rdrInSelected ~ .rdrDayNumber span::after {
+  background-color: #fff !important;
+}
+
+.rdrDay .rdrDayNumber span::after {
+  background-color: #ed1d24 !important;
+}
+
+.rdrMonthAndYearPickers {
+  font-size: 16px;
+}
+
+.rdrDayNumber,
+.rdrWeekDay {
+  color: #1e1f23 !important;
+  font-weight: 500 !important;
+}
+
 @layer base {
   body {
     @apply text-primary bg-body;
@@ -16,11 +37,11 @@
   }
 
   .h2 {
-    @apply text-4xl mb-6 font-bold;
+    @apply mb-6 text-4xl font-bold;
   }
 
   .h3 {
-    @apply text-xl mb-4 font-semibold;
+    @apply mb-4 text-xl font-semibold;
   }
 
   .description {
