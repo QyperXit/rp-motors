@@ -5,6 +5,7 @@ import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
 import { SearchContext } from "./context/search";
+import SearchMobile from "./SearchMobile";
 
 const Header = () => {
   const { setSearchActive } = useContext(SearchContext);
@@ -45,10 +46,10 @@ const Header = () => {
         header ? "bg-white shadow-md py-2" : "bg-transparent shadow-none py-4"
       } fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}
     >
-      <div className="xl:container mx-auto flex flex-col xl:flex-row xl:justify-between xl:items-center">
+      <div className="flex flex-col mx-auto xl:container xl:flex-row xl:justify-between xl:items-center">
         <div
           onClick={() => setNav(!nav)}
-          className="flex justify-between items-center px-4"
+          className="flex items-center justify-between px-4"
         >
           {/* logo */}
           <Link
@@ -65,7 +66,7 @@ const Header = () => {
             />
           </Link>
           {/* nav open */}
-          <div className="xl:hidden cursor-pointer">
+          <div className="cursor-pointer xl:hidden">
             {nav ? (
               <BiX className="text-4xl" />
             ) : (
@@ -142,6 +143,7 @@ const Header = () => {
           >
             See all cars
           </Link>
+          <SearchMobile />
         </nav>
       </div>
     </header>
