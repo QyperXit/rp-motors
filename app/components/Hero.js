@@ -13,6 +13,7 @@ const Hero = () => {
         {/*  */}
         <div className="flex flex-col items-center justify-center h-full xl:flex-row xl:justify-start">
           <div className="mt-16 text-center xl:max-w-xl xl:text-left xl:mt-0">
+            {/* text */}
             <h1 className="h1">
               Explore the Finest <span className=" text-accent">Global</span>{" "}
               Offers
@@ -40,7 +41,15 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div>image</div>
+          <div className="relative w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-48">
+            <Image
+              src={"/images/hero/car.svg"}
+              fill
+              alt=""
+              style={{ objectFit: "contain" }}
+              priority
+            />
+          </div>
         </div>
       </div>
       {searchActive ? (
