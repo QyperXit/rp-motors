@@ -1,12 +1,11 @@
-import React from "react";
+import TestimonalSlider from "./TestimonalSlider";
 
 const Testimonial = () => {
   return (
-    <section
-      className="flex items-center section bg-cyan-300"
-      id="testimonials"
-    >
-      Testimonial
+    <section className="flex items-center section " id="testimonials">
+      <div className="container mx-auto">
+        <TestimonalSlider />
+      </div>
     </section>
   );
 };
