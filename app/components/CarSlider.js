@@ -153,7 +153,7 @@ const CarSlider = () => {
                   <div className="text-[13px] text-secondary uppercase">
                     {car.type}
                   </div>
-                  <h3 className="text-lg font-bold uppercase">{car.name}</h3>
+                  <h3 className="font-bold uppercase text-md">{car.name}</h3>
                   <div className="mb-10 font-semibold uppercase text-accent">
                     ${car.price}/day
                   </div>
