@@ -173,7 +173,7 @@ const CarSlider = () => {
                       <div className="flex items-center justify-center w-12 h-12 mb-2 rounded-full bg-primary">
                         <Image width={24} height={24} alt="" src={item.icon} />
                       </div>
-                      <div className="text=[12px] upeer">{item.text}</div>
+                      <div className="text=[12px] uppercase">{item.text}</div>
                     </div>
                   );
                 })}
