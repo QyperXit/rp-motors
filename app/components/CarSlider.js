@@ -70,13 +70,13 @@ const cars = {
   car3: {
     type: "SUV",
     name: "Honda CR-V",
-    price: 25,
+    price: 35,
     stars: 4.7,
     image: "/images/carSlider/car03.svg",
     info: [
       {
         icon: "icons/carSlider/gearshift.svg",
-        text: "Automatic",
+        text: "Auto",
       },
       {
         icon: "icons/carSlider/seat.svg",
@@ -105,7 +105,7 @@ const cars = {
     info: [
       {
         icon: "icons/carSlider/gearshift.svg",
-        text: "Automatic",
+        text: "Auto",
       },
       {
         icon: "icons/carSlider/seat.svg",
@@ -166,7 +166,7 @@ const CarSlider = () => {
                   <FaStar />
                 </div>
               </div>
-              <div className="flex mb-10 gap-x-3 xl:gap-x-4 w-max">
+              <div className="flex mb-10 gap-x-0 md:gap-x-1 xl:gap-x-4 w-max">
                 {car.info.map((item, index) => {
                   return (
                     <div key={index} className="flex flex-col items-center">
