@@ -16,58 +16,71 @@ const Brands = () => {
         viewport={{ once: false, amount: 0.6 }}
         className="container mx-auto"
       >
-        <div className="grid grid-cols-3 gap-6 place-items-center xl:flex xl:flex-wrap xl:gap-x-6 xl:justify-between">
-          <div>
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 place-items-center xl:flex xl:flex-wrap xl:gap-x-6 xl:justify-between">
+          <div className="flex flex-col items-center gap-y-4">
             <Image
-              src={"/icons/brands/ford.svg"}
-              width={85}
-              height={32}
-              alt=""
-            />
-          </div>
-          <div>
-            <Image
-              src={"/icons/brands/mercedes.svg"}
+              src={"/icons/servicesIcons/suspension.svg"}
               width={60}
               height={60}
               alt=""
             />
+            <span className="font-semibold text-secondary">Suspension</span>
           </div>
-          <div>
+          <div className="flex flex-col items-center gap-y-4">
             <Image
-              src={"/icons/brands/audi.svg"}
-              width={85}
-              height={50}
+              src={"/icons/servicesIcons/batteries.svg"}
+              width={70}
+              height={70}
               alt=""
             />
+            <span className="font-semibold text-secondary">Batteries</span>
           </div>
-          <div>
+          <div className="flex flex-col items-center gap-y-4">
             <Image
-              src={"/icons/brands/bmw.svg"}
+              src={"/icons/servicesIcons/fan.svg"}
               width={60}
               height={60}
               alt=""
             />
+            <span className="font-semibold text-secondary">
+              Air Conditioning
+            </span>
           </div>
-          <div>
-            <Image src={"/icons/brands/vw.svg"} width={60} height={60} alt="" />
-          </div>
-          <div>
+          <div className="flex flex-col items-center gap-y-4">
             <Image
-              src={"/icons/brands/mazda.svg"}
+              src={"/icons/servicesIcons/exhaust.svg"}
+              width={60}
+              height={60}
+              alt=""
+            />
+            <span className="font-semibold text-secondary">Exhaust</span>
+          </div>
+          <div className="flex flex-col items-center gap-y-4">
+            <Image
+              src={"/icons/servicesIcons/carChecks.svg"}
+              width={60}
+              height={60}
+              alt=""
+            />
+            <span className="font-semibold text-secondary">Car Checks</span>
+          </div>
+          <div className="flex flex-col items-center gap-y-4">
+            <Image
+              src={"/icons/servicesIcons/brakes.svg"}
               width={62}
               height={50}
               alt=""
             />
+            <span className="font-semibold text-secondary">Brake Repair</span>
           </div>
-          <div>
+          {/* <div>
             <Image
               src={"/icons/brands/skoda.svg"}
               width={60}
               height={60}
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </motion.div>
     </section>

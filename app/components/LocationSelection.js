@@ -5,18 +5,19 @@ import React, { useState } from "react";
 import { Menu, MenuButton, MenuItems } from "@headlessui/react";
 
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaRoadCircleCheck } from "react-icons/fa6";
 
-const locations = [
-  "Main Street 123, United States",
-  "Business Avenue 456, Canada",
-  "Park Road 789, United Kingdom",
-];
+// const locations = [
+//   "Main Street 123, United States",
+//   "Business Avenue 456, Canada",
+//   "Park Road 789, United Kingdom",
+// ];
 
 const LocationSelection = () => {
-  const [location, setLocation] = useState("Select Location");
+  // const [location, setLocation] = useState("Select Location");
   return (
-    <Menu as="div" className="flex w-full h-full xl:flex-1">
-      <div className="relative flex-1">
+    <div className="flex w-full h-full xl:flex-1">
+      {/* <div className="relative flex-1">
         <MenuButton className="flex flex-col items-center justify-center w-full h-full dropdown-btn xl:items-start xl:p-8">
           <div className="flex justify-center w-full h-16 xl:h-full xl:justify-start xl:border-r xl:border-black/10">
             <div className="flex flex-col justify-center">
@@ -45,8 +46,15 @@ const LocationSelection = () => {
             );
           })}
         </MenuItems>
+      </div> */}
+      <div className="flex flex-col items-center justify-center w-full h-full gap-3 xl:flex-row ">
+        <FaRoadCircleCheck className="text-xl text-accent" />
+
+        <h2 className="text-[15px] xl:text-[20px] uppercase font-bold">
+          MOT TESTING
+        </h2>
       </div>
-    </Menu>
+    </div>
   );
 };
 

@@ -3,6 +3,7 @@
 import { useContext } from "react";
 import { SearchContext } from "./context/search";
 import DateSelection from "./DateSelection";
+import EngineTuning from "./EngineTuning";
 import HourSelection from "./HourSelection";
 import LocationSelection from "./LocationSelection";
 const Search = () => {
@@ -19,7 +20,9 @@ const Search = () => {
         <LocationSelection />
         <DateSelection />
         <HourSelection />
-        <div className="flex items-center px-6 xl:h-full xl:px-0">
+        <EngineTuning />
+
+        {/* <div className="flex items-center px-6 xl:h-full xl:px-0">
           <button
             className={`${
               searchActive
@@ -29,7 +32,7 @@ const Search = () => {
           >
             Search
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

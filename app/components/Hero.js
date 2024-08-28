@@ -23,8 +23,10 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="h1"
             >
-              Explore the Finest <span className=" text-accent">Global</span>{" "}
-              Offers
+              Explore the Best at <span className="text-accent">R P</span>{" "}
+              Motors Services
+              {/* Explore the Finest <span className=" text-accent">Global</span>{" "}
+              Offers */}
             </motion.h1>
             <motion.p
               variants={FadeIn("down", 0.4)}
@@ -33,8 +35,10 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"
             >
-              Find your ideal ride for any adventure with our diverse range of
-              affordable and dependable cars rentals.
+              {/* Find your ideal ride for any adventure with our diverse range of
+              affordable and dependable cars rentals. */}
+              Experience expert care and value with our extensive range of
+              reliable and affordable automotive repair services.
             </motion.p>
             <motion.div
               variants={FadeIn("down", 0.6)}
@@ -43,22 +47,23 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.8 }}
               className="flex justify-center gap-x-3 xl:justify-start"
             >
-              <button className="btn-cta">
-                <Image
+              <button className="font-semibold text-white btn-cta">
+                {/* <Image
                   src={"/icons/buttons/app-store.svg"}
                   width={132}
                   height={36}
                   alt=""
-                />
+                /> */}
+                Contact Now
               </button>
-              <button className="btn-cta">
+              {/* <button className="btn-cta">
                 <Image
                   src={"/icons/buttons/google-play.svg"}
                   width={132}
                   height={36}
                   alt=""
                 />
-              </button>
+              </button> */}
             </motion.div>
           </div>
           <motion.div
@@ -69,7 +74,8 @@ const Hero = () => {
             className="relative w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-48"
           >
             <Image
-              src={"/images/hero/car.svg"}
+              // src={"/images/hero/car.svg"}
+              src={"/images/hero/carSilver.png"}
               fill
               alt=""
               style={{ objectFit: "contain" }}
