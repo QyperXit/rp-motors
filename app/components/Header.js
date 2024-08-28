@@ -96,7 +96,7 @@ const Header = () => {
             smooth={DesktopMode}
             spy={true}
           >
-            Cars
+            Auto Repair
           </Link>
           <Link
             className="cursor-pointer"

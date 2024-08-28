@@ -8,123 +8,30 @@ import { motion } from "framer-motion";
 import { FaRegStar, FaStar, FaStarHalktAlt } from "react-icons/fa";
 import { FadeIn } from "../util/variants";
 
-const cars = {
-  car1: {
-    type: "Hatchback",
-    name: "Ford Focus",
-    price: 29,
-    stars: 3.5,
-    image: "/images/carSlider/car01.svg",
-    info: [
-      {
-        icon: "icons/carSlider/gearshift.svg",
-        text: "Manual",
-      },
-      {
-        icon: "icons/carSlider/seat.svg",
-        text: "5 seats",
-      },
-      {
-        icon: "icons/carSlider/gas.svg",
-        text: "Gas",
-      },
-      {
-        icon: "icons/carSlider/engine.svg",
-        text: "1600 HP",
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "front",
-      },
-    ],
+const addCheck = {
+  add1: {
+    title: "Free Inspection",
+    description:
+      "Bring your car to RP Motors today & let us take care of the rest...",
+    image: "/images/carfixing/inspection.jpg",
   },
-  car2: {
-    type: "Sedan",
-    name: "Toyoya Corolla",
-    price: 25,
-    stars: 5,
-    image: "/images/carSlider/car02.svg",
-    info: [
-      {
-        icon: "icons/carSlider/gearshift.svg",
-        text: "Manual",
-      },
-      {
-        icon: "icons/carSlider/seat.svg",
-        text: "5 seats",
-      },
-      {
-        icon: "icons/carSlider/gas.svg",
-        text: "Gas",
-      },
-      {
-        icon: "icons/carSlider/engine.svg",
-        text: "1600 HP",
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "front",
-      },
-    ],
+  add2: {
+    title: "Car Maintainance",
+    description:
+      "Proper maintainance is essential to keep your car in top condition.",
+    image: "/images/carfixing/oilcheck.jpg",
   },
-  car3: {
-    type: "SUV",
-    name: "Honda CR-V",
-    price: 25,
-    stars: 4.7,
-    image: "/images/carSlider/car03.svg",
-    info: [
-      {
-        icon: "icons/carSlider/gearshift.svg",
-        text: "Automatic",
-      },
-      {
-        icon: "icons/carSlider/seat.svg",
-        text: "5 seats",
-      },
-      {
-        icon: "icons/carSlider/gas.svg",
-        text: "Gas",
-      },
-      {
-        icon: "icons/carSlider/engine.svg",
-        text: "1600 HP",
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "front",
-      },
-    ],
+  add3: {
+    title: "General Repair",
+    description: "Engine repair, brake repair, steeriing & suspension repair.",
+    image: "/images/carfixing/carfix.jpg",
   },
-  car4: {
-    type: "Convertible",
-    name: "Mazda MX-5",
-    price: 32,
-    stars: 4.9,
-    image: "/images/carSlider/car02.svg",
-    info: [
-      {
-        icon: "icons/carSlider/gearshift.svg",
-        text: "Automatic",
-      },
-      {
-        icon: "icons/carSlider/seat.svg",
-        text: "5 seats",
-      },
-      {
-        icon: "icons/carSlider/gas.svg",
-        text: "Gas",
-      },
-      {
-        icon: "icons/carSlider/engine.svg",
-        text: "1600 HP",
-      },
-      {
-        icon: "icons/carSlider/wheel.svg",
-        text: "front",
-      },
-    ],
-  },
+  // add4: {
+  //   title: "Ford Focus",
+  //   description:
+  //     "A reliable hatchback with a 5-door design and a comfortable interior.",
+  //   image: "/images/carSlider/car02.svg",
+  // },
 };
 
 const CarSlider = () => {
@@ -134,7 +41,7 @@ const CarSlider = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
-      className="container mx-auto"
+      className="container mx-auto mt-10"
     >
       <Swiper
         breakpoints={{
@@ -143,42 +50,29 @@ const CarSlider = () => {
           1260: { slidesPerView: 3, spaceBetween: 32 },
         }}
       >
-        {Object.values(cars).map((car, index) => (
+        {Object.values(addCheck).map((car, index) => (
           <SwiperSlide key={index}>
             {/* <h3>{car.name}</h3> */}
             <div className="max-w-[385px] mx-auto sm:mx-0 ">
               <Image src={car.image} alt="" width={380} height={284} />
-              <div className="flex justify-between">
-                <div>
-                  <div className="text-[13px] text-secondary uppercase">
-                    {car.type}
-                  </div>
-                  <h3 className="font-bold uppercase text-md">{car.name}</h3>
-                  <div className="mb-10 font-semibold uppercase text-accent">
+              <h2 className="mt-6 text-xl font-semibold text-center text-accent">
+                {car.title}
+                {/* <h3 className="font-bold uppercase text-md">{car.name}</h3> */}
+                {/* <div className="mb-10 font-semibold uppercase text-accent">
                     ${car.price}/day
-                  </div>
-                </div>
-                <div className="flex gap-x-2 text-accent h-max">
+                  </div> */}
+                {/* <div className="flex gap-x-2 text-accent h-max">
                   <FaStar />
                   <FaStar />
                   <FaStar />
                   <FaStar />
                   <FaStar />
-                </div>
-              </div>
-              <div className="flex mb-10 gap-x-3 xl:gap-x-4 w-max">
-                {car.info.map((item, index) => {
-                  return (
-                    <div key={index} className="flex flex-col items-center">
-                      <div className="flex items-center justify-center w-12 h-12 mb-2 rounded-full bg-primary">
-                        <Image width={24} height={24} alt="" src={item.icon} />
-                      </div>
-                      <div className="text=[12px] uppercase">{item.text}</div>
-                    </div>
-                  );
-                })}
-              </div>
-              <button className="btn btn-accent btn-lg">See details</button>
+                </div> */}
+              </h2>
+              <p className="mt-6 text-center ">{car.description}</p>
+              <button className="mt-6 btn btn-accent btn-lg">
+                Get Directions
+              </button>
             </div>
           </SwiperSlide>
         ))}
