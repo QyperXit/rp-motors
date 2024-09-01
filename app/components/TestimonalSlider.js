@@ -17,17 +17,24 @@ import { FadeIn } from "../util/variants";
 const testimonialData = [
   {
     message:
-      "They truly exceeded my expectations and made my car rental experience a delay",
-    avatar: "/images/testimonial/avatar.png",
-    name: "Ravi Kumar",
-    job: "Business Owner",
+      "Josh and Roy are both great guys.  They're very helpful and provide a great quality service.  I would, and do, recommend them to others looking for trustworthy and reliable mechanics.",
+    avatar: "/icons/testimonial/review.png",
+    name: "Lee Nash",
+    job: "Google Reviews",
   },
   {
     message:
-      "They truly exceeded my expectations and  rental experience a delight",
-    avatar: "/images/testimonial/avatar.png",
-    name: "Kelly Clarke",
-    job: "Software Developer",
+      "Took my Abarth 595 here for a service and it’s first cambelt change alongside the water pump. Excellent prices and well informed throughout the process. Highly recommend",
+    avatar: "/icons/testimonial/review.png",
+    name: "Isaac Hussain",
+    job: "Google Reviews",
+  },
+  {
+    message:
+      "It's all about the personal touch and that goes a long way, Roy the owner and Josh the mechanic will sort you out and see you right.One to one with the person fixing your car, priceless.",
+    avatar: "/icons/testimonial/review.png",
+    name: "John Townsend",
+    job: "Google Reviews",
   },
 ];
 

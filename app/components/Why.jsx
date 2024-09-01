@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { MdHandshake, MdKey, MdTrendingUp } from "react-icons/md";
+import { MdBuild, MdPeople, MdStar } from "react-icons/md";
 import { FadeIn } from "../util/variants";
 
 const Why = () => {
@@ -16,7 +16,7 @@ const Why = () => {
           viewport={{ oncee: false, amount: 0.6 }}
           className="text-center h2"
         >
-          Unmatched excellence and customer satisfaction
+          Quality Repairs with a Personal Touch
         </motion.h2>
         <motion.p
           variants={FadeIn("up", 0.4)}
@@ -25,9 +25,9 @@ const Why = () => {
           viewport={{ oncee: false, amount: 0.6 }}
           className="max-w-[680px] text-center mx-auto mb-2"
         >
-          Our dedicated to providing exceptional services sets us apart from the
-          competition. From the moment you engage with us, we strive to exceed
-          your expectations in every interaction.
+          At our shop, we combine top-notch service with affordable prices. Our
+          reputation for quality and reliability is built on the trust of our
+          loyal customers who keep coming back and recommending us.
         </motion.p>
         <motion.div
           variants={FadeIn("up", 0.6)}
@@ -37,7 +37,7 @@ const Why = () => {
           className="justify-center hidden mb-6 md:flex xl:mb-2"
         >
           <Image
-            src={"/images/why/car.svg"}
+            src={"/images/why/bluecar.png"}
             width={1060}
             height={420}
             alt={""}
@@ -52,29 +52,29 @@ const Why = () => {
         >
           {/* item 1 */}
           <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
-            <MdKey className="text-[38px] text-accent mb-4" />
-            <h3 className="h3"> Rent simply and quickly</h3>
+            <MdBuild className="text-[38px] text-accent mb-4" />
+            <h3 className="h3"> Skilled Repairs</h3>
             <p className="hidden xl:flex">
-              We prioritize your need and we go above and beyond to ensure your
-              experience with us nothing short of outstanding.
+              Our experienced technicians ensure every job is done right the
+              first time, providing you with peace of mind.
             </p>
           </div>
           {/* item 2 */}
           <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
-            <MdTrendingUp className="text-[38px] text-accent mb-4" />
-            <h3 className="h3"> Modern & well maintained vehicles</h3>
+            <MdStar className="text-[38px] text-accent mb-4" />
+            <h3 className="h3">Top Quality Service</h3>
             <p className="hidden xl:flex">
-              We prioritize your need and we go above and beyond to ensure your
-              experience with us nothing short of outstanding.
+              We use high-quality parts and the latest techniques to keep your
+              vehicle running smoothly.
             </p>
           </div>
           {/* item 3 */}
           <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
-            <MdHandshake className="text-[38px] text-accent mb-4" />
-            <h3 className="h3">Prompt and flexible services</h3>
+            <MdPeople className="text-[38px] text-accent mb-4" />
+            <h3 className="h3">Friendly and Reliable</h3>
             <p className="hidden xl:flex">
-              We prioritize your need and we go above and beyond to ensure your
-              experience with us nothing short of outstanding.
+              Our customers are our priority. We treat you like family, with
+              honest advice and a commitment to keeping costs down.
             </p>
           </div>
         </motion.div>

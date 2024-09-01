@@ -41,7 +41,7 @@ const CarSlider = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
-      className="container mx-auto mt-10"
+      className="container mx-auto mt-10 "
     >
       <Swiper
         breakpoints={{
@@ -53,21 +53,16 @@ const CarSlider = () => {
         {Object.values(addCheck).map((car, index) => (
           <SwiperSlide key={index}>
             {/* <h3>{car.name}</h3> */}
-            <div className="max-w-[385px] mx-auto sm:mx-0 ">
-              <Image src={car.image} alt="" width={380} height={284} />
+            <div className="max-w-[385px]  mx-auto sm:mx-0 hover:bg-[#b2b7c2]/10 hover:shadow-md ">
+              <Image
+                src={car.image}
+                alt=""
+                width={380}
+                height={284}
+                className="rounded-[20px]"
+              />
               <h2 className="mt-6 text-xl font-semibold text-center text-accent">
                 {car.title}
-                {/* <h3 className="font-bold uppercase text-md">{car.name}</h3> */}
-                {/* <div className="mb-10 font-semibold uppercase text-accent">
-                    ${car.price}/day
-                  </div> */}
-                {/* <div className="flex gap-x-2 text-accent h-max">
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div> */}
               </h2>
               <p className="mt-6 text-center ">{car.description}</p>
               <button className="mt-6 btn btn-accent btn-lg">

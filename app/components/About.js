@@ -6,6 +6,9 @@ import {
   MdOutlineBuildCircle,
   MdOutlineDirectionsCar,
   MdOutlineMapsHomeWork,
+  MdOutlinePeopleAlt,
+  MdOutlineRateReview,
+  MdOutlineShare,
 } from "react-icons/md";
 
 import CountUp from "react-countup";
@@ -31,7 +34,7 @@ const About = () => {
           >
             <Image
               className="rounded-[20px]"
-              src={"/images/about/car01.png"}
+              src={"/images/carfixing/repair.jpg"}
               width={600}
               height={448}
               alt=""
@@ -46,7 +49,7 @@ const About = () => {
                 viewport={{ oncee: false, amount: 0.6 }}
                 className="h2"
               >
-                Car services simplified
+                Trusted Car Repair Expertise
               </motion.h2>
               <motion.p
                 variants={FadeIn("up", 0.6)}
@@ -55,9 +58,9 @@ const About = () => {
                 viewport={{ oncee: false, amount: 0.6 }}
                 classname="mb-[42px] max-w-md"
               >
-                Rent, choose and repair with ease. Our convenient locations,
-                diverse car types, and reliable repair points ensure a seamless
-                car experience.
+                Our experienced technicians provide top-quality repairs with a
+                personal touch, ensuring your vehicle receives the best care
+                possible.
               </motion.p>
               {/*  */}
               <motion.div
@@ -72,36 +75,36 @@ const About = () => {
                   <MdOutlineDirectionsCar className="text-5xl text-accent" />
                   <div className="mb-2 text-3xl font-black">
                     {inView ? (
-                      <CountUp start={0} end={50} duration={3} delay={1} />
+                      <CountUp start={0} end={40} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    car <br /> types
+                    Trusted <br /> Since
                   </div>
                 </div>
                 <div className="flex flex-col w-[100px]">
-                  <MdOutlineMapsHomeWork className="text-5xl text-accent" />
+                  <MdOutlineShare className="text-5xl text-accent" />
                   <div className="mb-2 text-3xl font-black">
                     {inView ? (
-                      <CountUp start={0} end={125} duration={3} delay={1} />
+                      <CountUp start={0} end={25} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    rental <br /> outlets
+                    Referral <br /> Rate
                   </div>
                 </div>
                 <div className="flex flex-col w-[100px]">
-                  <MdOutlineBuildCircle className="text-5xl text-accent" />
+                  <MdOutlineRateReview className="text-5xl text-accent" />
                   <div className="mb-2 text-3xl font-black">
                     {inView ? (
-                      <CountUp start={0} end={35} duration={3} delay={1} />
+                      <CountUp start={0} end={98} duration={3} delay={1} />
                     ) : null}
                     +
                   </div>
                   <div className="uppercase text-[13px] font-semibold text-secondary">
-                    repair <br /> points
+                    Happy <br /> customers
                   </div>
                 </div>
                 {/*  */}
@@ -112,7 +115,7 @@ const About = () => {
                   viewport={{ oncee: false, amount: 0.6 }}
                   className="hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
                 >
-                  See all cars
+                  Book Now
                 </motion.button>
               </motion.div>
             </div>
