@@ -58,12 +58,7 @@ const Header = () => {
             spy={true}
             className="cursor-pointer"
           >
-            <Image
-              src={"/icons/logo.svg"}
-              width={194}
-              height={64}
-              alt={"logo"}
-            />
+            <Image src={"/icons/rp.svg"} width={194} height={64} alt={"logo"} />
           </Link>
           {/* nav open */}
           <div className="cursor-pointer xl:hidden">

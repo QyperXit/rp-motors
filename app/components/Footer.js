@@ -22,7 +22,7 @@ const Footer = () => {
         >
           <div className="flex flex-col flex-1 gap-y-8">
             <div className="cursor-pointer">
-              <Image src={"/icons/logo.svg"} width={200} height={200} alt="" />
+              <Image src={"/icons/rp.svg"} width={200} height={200} alt="" />
             </div>
             <div className="text-secondary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -74,7 +74,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1 ">
+          {/* <div className="flex-1 ">
             <h3 className="mb-8 font-bold h3">Newsletter</h3>
             <div className="mb-9 text-secondary">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsa
@@ -90,7 +90,7 @@ const Footer = () => {
                 Submit
               </button>
             </form>
-          </div>
+          </div> */}
         </motion.div>
       </div>
       <Copyright />

@@ -61,7 +61,7 @@ const TestimonalSlider = () => {
             <SwiperSlide key={index}>
               <div className="flex flex-col items-center justify-center text-center">
                 <FaQuoteLeft className="mb-6 text-7xl text-accent" />
-                <div className="text-2xl xl:text-4xl max-w-[874px] mb-12 font-medium">
+                <div className="text-xl xl:text-4xl max-w-[874px] mb-12 font-medium">
                   {message}
                 </div>
                 <Image src={avatar} width={64} height={64} alt="" />
