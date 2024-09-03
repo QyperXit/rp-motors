@@ -4,6 +4,7 @@ import Image from "next/image";
 import React, { useContext } from "react";
 import { FadeIn } from "../util/variants";
 import { SearchContext } from "./context/search";
+import FloatingItems from "./FloatingItems";
 import Search from "./Search";
 
 const Hero = () => {
@@ -80,7 +81,12 @@ const Hero = () => {
               alt=""
               style={{ objectFit: "contain" }}
               priority
+              className=""
             />
+            {/*  floating */}
+            <div className="absolute hidden xl:block ">
+              <FloatingItems />
+            </div>
           </motion.div>
         </div>
       </div>

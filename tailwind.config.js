@@ -18,6 +18,26 @@ module.exports = {
       xl: "1300px",
     },
     extend: {
+      keyframes: {
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        floatWithTranslate: {
+          "0%, 100%": {
+            transform:
+              "translate(var(--tw-translate-x), var(--tw-translate-y))",
+          },
+          "50%": {
+            transform:
+              "translate(calc(var(--tw-translate-x) + 0px), calc(var(--tw-translate-y) - 10px))",
+          },
+        },
+      },
+      animation: {
+        float: "float 4s ease-in-out infinite",
+        floatWithTranslate: "floatWithTranslate 4s ease-in-out infinite",
+      },
       colors: {
         primary: "#101828",
         secondary: "#667085",
