@@ -38,6 +38,7 @@ module.exports = {
         float: "float 4s ease-in-out infinite",
         floatWithTranslate: "floatWithTranslate 4s ease-in-out infinite",
       },
+
       colors: {
         primary: "#101828",
         secondary: "#667085",
