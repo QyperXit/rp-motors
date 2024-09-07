@@ -58,9 +58,11 @@ const About = () => {
                 viewport={{ oncee: false, amount: 0.6 }}
                 classname="mb-[42px] max-w-md"
               >
-                Our experienced technicians provide top-quality repairs with a
+                {/* Our experienced technicians provide top-quality repairs with a
                 personal touch, ensuring your vehicle receives the best care
-                possible.
+                possible. */}
+                Get honest, expert care from experienced technicians who offer
+                great advice and quality repairs at affordable prices.
               </motion.p>
               {/*  */}
               <motion.div
@@ -68,7 +70,7 @@ const About = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ oncee: false, amount: 0.2 }}
-                className="flex items-center mb-12 gap-x-8"
+                className="flex items-center mt-6 mb-12 gap-x-8"
               >
                 {/*  */}
                 <div className="flex flex-col w-[100px]">

@@ -53,7 +53,7 @@ const CarSlider = () => {
         {Object.values(addCheck).map((car, index) => (
           <SwiperSlide key={index}>
             {/* <h3>{car.name}</h3> */}
-            <div className="max-w-[385px]  mx-auto sm:mx-0 hover:bg-[#b2b7c2]/10 hover:shadow-md ">
+            <div className="max-w-[385px]  mx-auto sm:mx-0 ">
               <Image
                 src={car.image}
                 alt=""

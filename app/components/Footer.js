@@ -25,12 +25,12 @@ const Footer = () => {
               <Image src={"/icons/rp.svg"} width={200} height={200} alt="" />
             </div>
             <div className="text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Get in touch today for expert car repairs!
             </div>
             <div className="flex flex-col font-semibold gap-y-4">
               <div className="flex items-center gap-x-[10px]">
                 <FaPhone />
-                <div className="font-medium">(123)456-7890</div>
+                <div className="font-medium">(0121) 454-6590</div>
               </div>
               <div className="flex items-center gap-x-[10px]">
                 <FaEnvelope />
@@ -43,17 +43,15 @@ const Footer = () => {
               <h3 className="mb-8 font-bold h3">Company</h3>
               <ul className="flex flex-col font-semibold gap-y-4">
                 <li>
-                  <a href="">New York</a>
+                  <a href="">About</a>
                 </li>
                 <li>
-                  <a href="">Careers</a>
+                  <a href="">Why Us</a>
                 </li>
                 <li>
-                  <a href="">Mobile</a>
+                  <a href="">Testimonals</a>
                 </li>
-                <li>
-                  <a href="">How we work</a>
-                </li>
+                <li>{/* <a href="">How we work</a> */}</li>
               </ul>
             </div>
           </div>

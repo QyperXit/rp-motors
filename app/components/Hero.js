@@ -36,10 +36,10 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"
             >
-              {/* Find your ideal ride for any adventure with our diverse range of
-              affordable and dependable cars rentals. */}
-              Experience expert care and value with our extensive range of
-              reliable and affordable automotive repair services.
+              Enjoy reliable, affordable repairs with expert care from Josh and
+              Roy, offering friendly and trustworthy service.
+              {/* Experience expert care and value with our extensive range of
+              reliable and affordable automotive repair services. */}
             </motion.p>
             <motion.div
               variants={FadeIn("down", 0.6)}
