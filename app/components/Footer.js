@@ -32,10 +32,10 @@ const Footer = () => {
                 <FaPhone />
                 <div className="font-medium">(0121) 454-6590</div>
               </div>
-              <div className="flex items-center gap-x-[10px]">
+              {/* <div className="flex items-center gap-x-[10px]">
                 <FaEnvelope />
                 <div className="font-medium">office@carland.com</div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex flex-col flex-1 xl:items-center">

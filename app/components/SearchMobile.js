@@ -7,10 +7,10 @@ const SearchMobile = () => {
     <div className="font-medium xl:hidden">
       <div className="container mx-auto">
         <div className="flex flex-col gap-y-4">
-          <LocationSelection />
+          {/* <LocationSelection />
           <DateSelection />
           <HourSelection />
-          <EngineTuning />
+          <EngineTuning /> */}
           {/* <div className="flex items-center px-6 ">
             <button className="btn btn-sm btn-accent w-[164px] mx-auto">
               Search

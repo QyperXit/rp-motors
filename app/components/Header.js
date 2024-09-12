@@ -93,15 +93,7 @@ const Header = () => {
           >
             Auto Repair
           </Link>
-          <Link
-            className="cursor-pointer"
-            to="about"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
-          >
-            About
-          </Link>
+
           <Link
             className="cursor-pointer"
             to="testimonials"
@@ -119,6 +111,15 @@ const Header = () => {
             spy={true}
           >
             Why Us
+          </Link>
+          <Link
+            className="cursor-pointer"
+            to="about"
+            activeClass="active"
+            smooth={DesktopMode}
+            spy={true}
+          >
+            About
           </Link>
           <Link
             className="cursor-pointer"
