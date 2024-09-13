@@ -52,7 +52,7 @@ const Hero = () => {
                 Contact Now
               </button> */}
               <a
-                href="tel:+1234567890"
+                href="tel:+01214546590"
                 className="flex items-center font-semibold text-white no-underline btn-cta"
               >
                 Contact Now

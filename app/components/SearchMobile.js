@@ -1,7 +1,7 @@
-import DateSelection from "./DateSelection";
-import EngineTuning from "./EngineTuning";
-import HourSelection from "./HourSelection";
-import LocationSelection from "./LocationSelection";
+import EngineTuning from "./Diagnostics";
+import LocationSelection from "./Mot";
+import HourSelection from "./Repairs";
+import DateSelection from "./Servicing";
 const SearchMobile = () => {
   return (
     <div className="font-medium xl:hidden">

@@ -32,6 +32,9 @@ const Header = () => {
       } else {
         setSearchActive(false);
       }
+      if (!DesktopMode && window.scrollY > 0 && nav) {
+        setNav(false);
+      }
     };
 
     //remmove the event listener
@@ -130,15 +133,16 @@ const Header = () => {
           >
             Contact
           </Link>
-          <Link
+          <a
+            href="tel:+01214546590"
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
             to="/"
             activeClass="active"
             smooth={DesktopMode}
             spy={true}
           >
-            See all cars
-          </Link>
+            Call Us
+          </a>
           <SearchMobile />
         </nav>
       </div>

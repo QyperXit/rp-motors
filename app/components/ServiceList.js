@@ -2,10 +2,10 @@
 
 import { useContext } from "react";
 import { SearchContext } from "./context/search";
-import DateSelection from "./DateSelection";
-import EngineTuning from "./EngineTuning";
-import HourSelection from "./HourSelection";
-import LocationSelection from "./LocationSelection";
+import Diagnostics from "./Diagnostics";
+import Mot from "./Mot";
+import Repairs from "./Repairs";
+import Servicing from "./Servicing";
 const Search = () => {
   const { searchActive } = useContext(SearchContext);
   return (
@@ -17,10 +17,10 @@ const Search = () => {
       } hidden xl:block w-full relative shadow-lg`}
     >
       <div className={`flex h-full ${searchActive && "container mx-auto"}`}>
-        <LocationSelection />
-        <DateSelection />
-        <HourSelection />
-        <EngineTuning />
+        <Mot />
+        <Servicing />
+        <Repairs />
+        <Diagnostics />
       </div>
     </div>
   );

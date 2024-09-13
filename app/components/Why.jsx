@@ -13,7 +13,7 @@ const Why = () => {
           variants={FadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ oncee: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.6 }}
           className="text-center h2"
         >
           Quality Repairs with a Personal Touch
@@ -22,7 +22,7 @@ const Why = () => {
           variants={FadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ oncee: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.6 }}
           className="max-w-[680px] text-center mx-auto mb-2"
         >
           At our shop, we combine top-notch service with affordable prices. Our
@@ -33,7 +33,7 @@ const Why = () => {
           variants={FadeIn("up", 0.6)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ oncee: false, amount: 0.6 }}
+          viewport={{ once: false, amount: 0.6 }}
           className="justify-center hidden mb-6 md:flex xl:mb-2"
         >
           <Image
@@ -47,7 +47,7 @@ const Why = () => {
           variants={FadeIn("up", 0.8)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ oncee: false, amount: 0.4 }}
+          viewport={{ once: false, amount: 0.4 }}
           className="flex flex-wrap justify-center xl:grid xl:grid-cols-3 gap-4 xl:gap-y-0 xl:gap-x-[30px]"
         >
           {/* item 1 */}

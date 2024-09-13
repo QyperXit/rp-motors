@@ -1,10 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-// import { Link } from "react-scroll";
 import Image from "next/image";
 import React from "react";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 
 import { FadeIn } from "../util/variants";
 import Copyright from "./Copyright";
@@ -32,10 +31,6 @@ const Footer = () => {
                 <FaPhone />
                 <div className="font-medium">( 0121 ) 454-6590</div>
               </div>
-              {/* <div className="flex items-center gap-x-[10px]">
-                <FaEnvelope />
-                <div className="font-medium">office@carland.com</div>
-              </div> */}
             </div>
           </div>
           <div className="flex flex-col flex-1 xl:items-center">
@@ -43,13 +38,13 @@ const Footer = () => {
               <h3 className="mb-8 font-bold h3">Company</h3>
               <ul className="flex flex-col font-semibold gap-y-4">
                 <li>
-                  <a href="">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="">Why Us</a>
+                  <a href="#why">Why Us</a>
                 </li>
                 <li>
-                  <a href="">Testimonals</a>
+                  <a href="#testimonials">Testimonals</a>
                 </li>
                 <li>{/* <a href="">How we work</a> */}</li>
               </ul>

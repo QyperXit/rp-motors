@@ -110,15 +110,16 @@ const About = () => {
                   </div>
                 </div>
                 {/*  */}
-                <motion.button
+                <motion.a
+                  href="tel:+01214546590"
                   variants={FadeIn("up", 1)}
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ oncee: false, amount: 0.6 }}
-                  className="hidden xl:block bg-accent hover:bg-accent-hover rounded-[10px] w-full h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
+                  className="hidden xl:flex bg-accent hover:bg-accent-hover rounded-[10px] w-full  justify-center items-center h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
                 >
-                  Book Now
-                </motion.button>
+                  Call Us
+                </motion.a>
               </motion.div>
             </div>
           </div>
