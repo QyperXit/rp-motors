@@ -6,6 +6,7 @@ import { FadeIn } from "../util/variants";
 import { SearchContext } from "./context/search";
 import FloatingItems from "./FloatingItems";
 import ServiceList from "./ServiceList";
+import ServiceListMobile from "./ServiceListMobile";
 
 const Hero = () => {
   const { searchActive } = useContext(SearchContext);
@@ -100,6 +101,7 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <ServiceList />
+            {/* <ServiceListMobile /> */}
           </motion.div>
         </div>
       )}
