@@ -30,7 +30,7 @@ const Footer = () => {
             <div className="flex flex-col font-semibold gap-y-4">
               <div className="flex items-center gap-x-[10px]">
                 <FaPhone />
-                <div className="font-medium">(0121) 454-6590</div>
+                <div className="font-medium">( 0121 ) 454-6590</div>
               </div>
               {/* <div className="flex items-center gap-x-[10px]">
                 <FaEnvelope />

@@ -73,14 +73,6 @@ const Brands = () => {
             />
             <span className="font-semibold text-secondary">Brake Repair</span>
           </div>
-          {/* <div>
-            <Image
-              src={"/icons/brands/skoda.svg"}
-              width={60}
-              height={60}
-              alt=""
-            />
-          </div> */}
         </div>
       </motion.div>
     </section>

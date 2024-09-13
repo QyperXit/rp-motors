@@ -5,7 +5,6 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { motion } from "framer-motion";
-import { FaRegStar, FaStar, FaStarHalktAlt } from "react-icons/fa";
 import { FadeIn } from "../util/variants";
 
 const addCheck = {
@@ -65,9 +64,16 @@ const CarSlider = () => {
                 {car.title}
               </h2>
               <p className="mt-6 text-center ">{car.description}</p>
-              <button className="mt-6 btn btn-accent btn-lg">
+              {/* <button className="mt-6 btn btn-accent btn-lg">
                 Get Directions
-              </button>
+              </button> */}
+              <a
+                href="https://maps.app.goo.gl/3Cdbgwa28oa4Sm2H7"
+                className="mt-6 btn btn-accent btn-lg"
+              >
+                {" "}
+                Get Directions
+              </a>
             </div>
           </SwiperSlide>
         ))}

@@ -21,18 +21,6 @@ const Search = () => {
         <DateSelection />
         <HourSelection />
         <EngineTuning />
-
-        {/* <div className="flex items-center px-6 xl:h-full xl:px-0">
-          <button
-            className={`${
-              searchActive
-                ? "btn btn-sm btn-accent w-[164px]"
-                : "btn btn-lg btn-accent w-[184px]"
-            } `}
-          >
-            Search
-          </button>
-        </div> */}
       </div>
     </div>
   );

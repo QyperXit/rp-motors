@@ -5,7 +5,7 @@ import React, { useContext } from "react";
 import { FadeIn } from "../util/variants";
 import { SearchContext } from "./context/search";
 import FloatingItems from "./FloatingItems";
-import Search from "./Search";
+import ServiceList from "./ServiceList";
 
 const Hero = () => {
   const { searchActive } = useContext(SearchContext);
@@ -48,23 +48,15 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.8 }}
               className="flex justify-center gap-x-3 xl:justify-start"
             >
-              <button className="font-semibold text-white btn-cta">
-                {/* <Image
-                  src={"/icons/buttons/app-store.svg"}
-                  width={132}
-                  height={36}
-                  alt=""
-                /> */}
+              {/* <button className="font-semibold text-white btn-cta">
                 Contact Now
-              </button>
-              {/* <button className="btn-cta">
-                <Image
-                  src={"/icons/buttons/google-play.svg"}
-                  width={132}
-                  height={36}
-                  alt=""
-                />
               </button> */}
+              <a
+                href="tel:+1234567890"
+                className="flex items-center font-semibold text-white no-underline btn-cta"
+              >
+                Contact Now
+              </a>
             </motion.div>
           </div>
           <motion.div
@@ -97,7 +89,7 @@ const Hero = () => {
           transition={{ ease: easeInOut }}
           className="fixed top-[80px] z-10  w-full max-w-[1920px]"
         >
-          <Search />
+          <ServiceList />
         </motion.div>
       ) : (
         <div className=" -mt-12 w-full max-w-[1300px] mx-auto">
@@ -107,7 +99,7 @@ const Hero = () => {
             whileInView="show"
             viewport={{ once: false, amount: 0.2 }}
           >
-            <Search />
+            <ServiceList />
           </motion.div>
         </div>
       )}

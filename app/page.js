@@ -2,7 +2,7 @@ import { FaMapLocation } from "react-icons/fa6";
 import About from "./components/About";
 import BackToTopBtn from "./components/BackToTopBtn";
 import Cars from "./components/Cars";
-import Cta from "./components/Cta";
+// import Cta from "./components/Cta";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";

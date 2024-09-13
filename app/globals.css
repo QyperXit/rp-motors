@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --height: 50px;
+  --width: 300px;
+  --quantity: 5;
+  /* --position: 1;
+  --position: 2;
+  --position: 3;
+  --position: 4;
+  --position: 5; */
+}
+
 .rdrDayToday:not(.rdrDayPassive) .rdrInRange ~ .rdrDayNumber span::after,
 .rdrDayToday:not(.rdrDayPassive) .rdrInStartEdge ~ .rdrDayNumber span::after,
 .rdrDayToday:not(.rdrDayPassive) .rdrInEndEdge ~ .rdrDayNumber span::after,

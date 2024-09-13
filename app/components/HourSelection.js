@@ -2,12 +2,7 @@
 
 import React, { useState } from "react";
 
-import { Menu, MenuButton, MenuItems } from "@headlessui/react";
-
-import { FaClock } from "react-icons/fa6";
 import { MdCarRepair } from "react-icons/md";
-
-// const hours = ["10:00 AM", "12:00 AM", "14:00 PM", "16:00 PM"];
 
 const HourSelection = () => {
   // const [hour, setHour] = useState("10:00 AM");
