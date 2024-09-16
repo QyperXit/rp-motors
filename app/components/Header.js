@@ -134,7 +134,7 @@ const Header = () => {
             Contact
           </Link>
           <a
-            href="tel:+01214546590"
+            href="tel:01214546590"
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
             to="/"
             activeClass="active"

@@ -5,6 +5,7 @@ import React, { useContext } from "react";
 import { FadeIn } from "../util/variants";
 import { SearchContext } from "./context/search";
 import FloatingItems from "./FloatingItems";
+import ResponsiveContactButton from "./ResponsiveContactButton";
 import ServiceList from "./ServiceList";
 import ServiceListMobile from "./ServiceListMobile";
 
@@ -52,12 +53,13 @@ const Hero = () => {
               {/* <button className="font-semibold text-white btn-cta">
                 Contact Now
               </button> */}
-              <a
-                href="tel:+01214546590"
+              {/* <a
+                href="tel:01214546590"
                 className="flex items-center font-semibold text-white no-underline btn-cta"
               >
                 Contact Now
-              </a>
+              </a> */}
+              <ResponsiveContactButton />
             </motion.div>
           </div>
           <motion.div
