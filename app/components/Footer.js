@@ -21,7 +21,7 @@ const Footer = () => {
         >
           <div className="flex flex-col flex-1 gap-y-8">
             <div className="cursor-pointer">
-              <Image src={"/icons/rp.svg"} width={200} height={200} alt="" />
+              <Image src={"/icons/rp.png"} width={200} height={200} alt="" />
             </div>
             <div className="text-secondary">
               Get in touch today for expert car repairs!
