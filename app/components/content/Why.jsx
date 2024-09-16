@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { MdBuild, MdPeople, MdStar } from "react-icons/md";
-import { FadeIn } from "../util/variants";
+import { FadeIn } from "../../util/variants";
 
 const Why = () => {
   return (

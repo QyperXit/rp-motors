@@ -3,10 +3,7 @@
 import Image from "next/image";
 
 import {
-  MdOutlineBuildCircle,
   MdOutlineDirectionsCar,
-  MdOutlineMapsHomeWork,
-  MdOutlinePeopleAlt,
   MdOutlineRateReview,
   MdOutlineShare,
 } from "react-icons/md";
@@ -15,7 +12,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 
 import { motion } from "framer-motion";
-import { FadeIn } from "../util/variants";
+import { FadeIn } from "../../util/variants";
 
 const About = () => {
   const [ref, inView] = useInView({

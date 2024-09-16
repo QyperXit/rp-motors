@@ -5,7 +5,7 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import { motion } from "framer-motion";
-import { FadeIn } from "../util/variants";
+import { FadeIn } from "../../util/variants";
 
 const addCheck = {
   add1: {

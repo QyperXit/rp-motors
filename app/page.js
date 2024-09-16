@@ -1,14 +1,12 @@
-import { FaMapLocation } from "react-icons/fa6";
-import About from "./components/About";
-import BackToTopBtn from "./components/BackToTopBtn";
-import Cars from "./components/Cars";
-// import Cta from "./components/Cta";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import MapLocation from "./components/MapLocation";
-import Testimonial from "./components/Testimonial";
-import Why from "./components/Why";
+import Cars from "./components/content/Cars";
+import MapLocation from "./components/content/MapLocation";
+import Testimonial from "./components/content/Testimonial";
+import Why from "./components/content/Why";
+import About from "./components/core/About";
+import BackToTopBtn from "./components/core/BackToTopBtn";
+import Footer from "./components/core/Footer";
+import Header from "./components/core/Header";
+import Hero from "./components/core/Hero";
 
 export default function Home() {
   return (

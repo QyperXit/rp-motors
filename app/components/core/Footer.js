@@ -5,8 +5,8 @@ import Image from "next/image";
 import React from "react";
 import { FaPhone } from "react-icons/fa";
 
-import { FadeIn } from "../util/variants";
-import Copyright from "./Copyright";
+import { FadeIn } from "../../util/variants";
+import Copyright from "../content/Copyright";
 
 const Footer = () => {
   return (
@@ -67,23 +67,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          {/* <div className="flex-1 ">
-            <h3 className="mb-8 font-bold h3">Newsletter</h3>
-            <div className="mb-9 text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ipsa
-              aspernatur deleniti, quisquam reprehenderit maiores.
-            </div>
-            <form className="flex gap-x-2 h-14">
-              <input
-                type="text"
-                placeholder="Email"
-                className="h-full pl-4 border rounded-lg outline-none focus:border-accent"
-              />
-              <button type="submit" className="w-24 btn btn-sm btn-accent">
-                Submit
-              </button>
-            </form>
-          </div> */}
         </motion.div>
       </div>
       <Copyright />

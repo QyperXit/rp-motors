@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { FadeIn } from "../util/variants";
+import { FadeIn } from "../../util/variants";
 
 const MapLocation = () => {
   return (

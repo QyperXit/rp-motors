@@ -4,8 +4,7 @@ import { useContext, useEffect, useState } from "react";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { useMediaQuery } from "react-responsive";
 import { Link } from "react-scroll";
-import { SearchContext } from "./context/search";
-import SearchMobile from "./SearchMobile";
+import { SearchContext } from "../context/search";
 
 const Header = () => {
   const { setSearchActive } = useContext(SearchContext);
@@ -143,7 +142,6 @@ const Header = () => {
           >
             Call Us
           </a>
-          <SearchMobile />
         </nav>
       </div>
     </header>

@@ -2,12 +2,11 @@
 import { easeInOut, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useContext } from "react";
-import { FadeIn } from "../util/variants";
-import { SearchContext } from "./context/search";
-import FloatingItems from "./FloatingItems";
-import ResponsiveContactButton from "./ResponsiveContactButton";
-import ServiceList from "./ServiceList";
-import ServiceListMobile from "./ServiceListMobile";
+import { FadeIn } from "../../util/variants";
+import FloatingItems from "../content/FloatingItems";
+import ResponsiveContactButton from "../content/ResponsiveContactButton";
+import ServiceList from "../content/ServiceList";
+import { SearchContext } from "../context/search";
 
 const Hero = () => {
   const { searchActive } = useContext(SearchContext);
@@ -103,7 +102,6 @@ const Hero = () => {
             viewport={{ once: false, amount: 0.2 }}
           >
             <ServiceList />
-            {/* <ServiceListMobile /> */}
           </motion.div>
         </div>
       )}

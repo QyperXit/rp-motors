@@ -12,7 +12,7 @@ import { Pagination } from "swiper/modules";
 import { motion } from "framer-motion";
 
 import dynamic from "next/dynamic";
-import { FadeIn } from "../util/variants";
+import { FadeIn } from "../../util/variants";
 
 const testimonialData = [
   {

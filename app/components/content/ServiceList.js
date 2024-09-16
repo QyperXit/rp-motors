@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext } from "react";
-import { SearchContext } from "./context/search";
+import { SearchContext } from "../context/search";
 import Diagnostics from "./Diagnostics";
 import Mot from "./Mot";
 import Repairs from "./Repairs";

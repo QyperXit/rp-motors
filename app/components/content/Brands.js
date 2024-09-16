@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-import { FadeIn } from "../util/variants";
+import { FadeIn } from "../../util/variants";
 
 const Brands = () => {
   return (
