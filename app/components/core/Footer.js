@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
               <div className="flex gap-x-2">
                 <div className="text-secondary">Sat:</div>
-                <div className="font-semibold">09:00AM - 05:00PM</div>
+                <div className="font-semibold">Closed</div>
               </div>
               <div className="flex gap-x-2">
                 <div className="text-secondary">Sun:</div>
