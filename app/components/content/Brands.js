@@ -37,14 +37,12 @@ const Brands = () => {
           </div>
           <div className="flex flex-col items-center gap-y-4">
             <Image
-              src={"/icons/servicesIcons/fan.svg"}
-              width={60}
-              height={60}
+              src={"/icons/servicesIcons/transmission.svg"}
+              width={55}
+              height={55}
               alt=""
             />
-            <span className="font-semibold text-secondary">
-              Air Conditioning
-            </span>
+            <span className="font-semibold text-secondary">Transmission</span>
           </div>
           <div className="flex flex-col items-center gap-y-4">
             <Image
