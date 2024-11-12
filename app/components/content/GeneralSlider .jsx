@@ -33,7 +33,7 @@ const addCheck = {
   // },
 };
 
-const CarSlider = () => {
+const GeneralSlider = () => {
   return (
     <motion.div
       variants={FadeIn("up", 0.4)}
@@ -82,4 +82,4 @@ const CarSlider = () => {
   );
 };
 
-export default CarSlider;
+export default GeneralSlider;

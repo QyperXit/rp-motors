@@ -1,5 +1,5 @@
-import Cars from "./components/content/Cars";
 import MapLocation from "./components/content/MapLocation";
+import SwipeSlider from "./components/content/SwipeSlider";
 import Testimonial from "./components/content/Testimonial";
 import Why from "./components/content/Why";
 import About from "./components/core/About";
@@ -13,7 +13,7 @@ export default function Home() {
     <main className=" max-w-[1920px] bg-white mx-auto relative overflow-hidden">
       <Header />
       <Hero />
-      <Cars />
+      <SwipeSlider />
       <About />
       <Why />
       <Testimonial />

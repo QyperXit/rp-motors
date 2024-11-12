@@ -53,7 +53,7 @@ const About = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: true, amount: 0.6 }}
-                classname="mb-[42px] max-w-md"
+                className="mb-[42px] max-w-md"
               >
                 {/* Our experienced technicians provide top-quality repairs with a
                 personal touch, ensuring your vehicle receives the best care

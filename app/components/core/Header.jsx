@@ -56,8 +56,8 @@ const Header = () => {
           {/* logo */}
           <Link
             href={"home"}
-            smooth={DesktopMode}
-            spy={true}
+            smooth="true"
+            spy="true"
             className="cursor-pointer"
           >
             <Image src={"/icons/rp.png"} width={194} height={64} alt={"logo"} />
@@ -80,18 +80,18 @@ const Header = () => {
           <Link
             className="cursor-pointer"
             to="home"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
+            activeclass="active"
+            smooth="true"
+            spy="true"
           >
             Home
           </Link>
           <Link
             className="cursor-pointer"
             to="cars"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
+            activeclass="active"
+            smooth="true"
+            spy="true"
           >
             Auto Repair
           </Link>
@@ -99,36 +99,36 @@ const Header = () => {
           <Link
             className="cursor-pointer"
             to="testimonials"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
+            activeclass="active"
+            smooth="true"
+            spy="true"
           >
             Testimonals
           </Link>
           <Link
             className="cursor-pointer"
             to="why"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
+            activeclass="active"
+            smooth="true"
+            spy="true"
           >
             Why Us
           </Link>
           <Link
             className="cursor-pointer"
             to="about"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
+            activeclass="active"
+            smooth="true"
+            spy="true"
           >
             About
           </Link>
           <Link
             className="cursor-pointer"
             to="contact"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
+            activeclass="active"
+            smooth="true"
+            spy="true"
           >
             Contact
           </Link>
@@ -136,9 +136,9 @@ const Header = () => {
             href="tel:01214546590"
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
             to="/"
-            activeClass="active"
-            smooth={DesktopMode}
-            spy={true}
+            activeclass="active"
+            smooth="true"
+            spy="true"
           >
             Call Us
           </a>
