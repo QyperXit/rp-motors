@@ -22,7 +22,7 @@ const Hero = () => {
               variants={FadeIn("down", 0.2)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.6 }}
+              viewport={{ once: true, amount: 0.6 }}
               className="h1"
             >
               Explore the Best at <span className="text-accent">R P</span>{" "}
@@ -34,7 +34,7 @@ const Hero = () => {
               variants={FadeIn("down", 0.4)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.6 }}
+              viewport={{ once: true, amount: 0.6 }}
               className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"
             >
               Enjoy reliable, affordable repairs with expert care from Josh and
@@ -46,7 +46,7 @@ const Hero = () => {
               variants={FadeIn("down", 0.6)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.8 }}
+              viewport={{ once: true, amount: 0.8 }}
               className="flex justify-center gap-x-3 xl:justify-start"
             >
               {/* <button className="font-semibold text-white btn-cta">
@@ -65,7 +65,7 @@ const Hero = () => {
             variants={FadeIn("up", 0.6)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.6 }}
+            viewport={{ once: true, amount: 0.6 }}
             className="relative w-full h-full max-h-[50vh] md:max-w-[70vw] xl:max-w-[860px] xl:max-h-[542px] xl:absolute xl:-right-[100px] min-[1680px]:right-[120px] xl:top-48"
           >
             <Image
@@ -99,7 +99,7 @@ const Hero = () => {
             variants={FadeIn("up", 0.8)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <ServiceList />
           </motion.div>

@@ -26,7 +26,7 @@ const About = () => {
             variants={FadeIn("up", 0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ oncee: false, amount: 0.6 }}
+            viewport={{ once: true, amount: 0.6 }}
             className="flex-1 mb-8 xl:mb-0"
           >
             <Image
@@ -43,7 +43,7 @@ const About = () => {
                 variants={FadeIn("up", 0.4)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ oncee: false, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.6 }}
                 className="h2"
               >
                 Trusted Car Repair Expertise
@@ -52,7 +52,7 @@ const About = () => {
                 variants={FadeIn("up", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ oncee: false, amount: 0.6 }}
+                viewport={{ once: true, amount: 0.6 }}
                 classname="mb-[42px] max-w-md"
               >
                 {/* Our experienced technicians provide top-quality repairs with a
@@ -66,7 +66,7 @@ const About = () => {
                 variants={FadeIn("up", 0.8)}
                 initial="hidden"
                 whileInView={"show"}
-                viewport={{ oncee: false, amount: 0.2 }}
+                viewport={{ once: true, amount: 0.2 }}
                 className="flex items-center mt-6 mb-12 gap-x-8"
               >
                 {/*  */}
@@ -112,7 +112,7 @@ const About = () => {
                   variants={FadeIn("up", 1)}
                   initial="hidden"
                   whileInView={"show"}
-                  viewport={{ oncee: false, amount: 0.6 }}
+                  viewport={{ once: true, amount: 0.6 }}
                   className="hidden xl:flex bg-accent hover:bg-accent-hover rounded-[10px] w-full  justify-center items-center h-16 uppercase font-medium text-white tracking-[2px] text-[13px] max-w-[184px]"
                 >
                   Call Us

@@ -11,7 +11,7 @@ const MapLocation = () => {
             variants={FadeIn("right", 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.6 }}
+            viewport={{ once: true, amount: 0.6 }}
             className="max-w-xl mx-auto text-center ltr:sm:text-left rtl:sm:text-right"
           >
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
@@ -35,7 +35,7 @@ const MapLocation = () => {
           variants={FadeIn("left", 0.8)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4859.710099744883!2d-1.9285841868795777!3d52.48176013894241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcfc8ab142cf%3A0x902426f15a6edd6c!2sR%20P%20Motor%20Services!5e0!3m2!1sen!2suk!4v1725753031392!5m2!1sen!2suk"
           height="450"
           className=" border-[8px] border-white object-contain w-full h-56 sm:h-full mb-8 md:mb-0"

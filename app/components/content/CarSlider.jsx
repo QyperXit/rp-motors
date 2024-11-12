@@ -39,7 +39,7 @@ const CarSlider = () => {
       variants={FadeIn("up", 0.4)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.2 }}
       className="container mx-auto mt-10 "
     >
       <Swiper

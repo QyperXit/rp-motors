@@ -13,7 +13,7 @@ const Brands = () => {
         variants={FadeIn("up", 0.45)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.6 }}
+        viewport={{ once: true, amount: 0.6 }}
         className="container mx-auto"
       >
         <div className="grid grid-cols-2 gap-6 md:grid-cols-3 place-items-center xl:flex xl:flex-wrap xl:gap-x-6 xl:justify-between">
