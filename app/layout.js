@@ -11,14 +11,19 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
     return (
         <SearchContextProvider>
             <html lang="en">
             <body className={inter.className}>
-            {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
-                <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+            {gaId ? (
+                <GoogleAnalytics GA_MEASUREMENT_ID={gaId} />
+            ) : (
+                // Optional: console warning for development
+                process.env.NODE_ENV === 'development' &&
+                console.warn('Google Analytics ID is not defined')
             )}
-
             {children}
             </body>
             </html>
