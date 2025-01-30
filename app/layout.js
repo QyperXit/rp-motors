@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
         <SearchContextProvider>
             <html lang="en">
             <body className={inter.className}>
-            <GoogleAnalytics GA_MEASUREMENT_ID="G-KQCFWFMNRQ" />
+            {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+                <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+            )}
 
             {children}
             </body>
