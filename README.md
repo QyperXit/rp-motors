@@ -11,6 +11,8 @@ This project is a modern and interactive website built for a local car repair sh
 - **Animated Counters:** The site includes animated number counters using **React CounterUp** to highlight key statistics.
 - **SEO Friendly:** Utilizes Next.js's server-side rendering (SSR) and static site generation (SSG) features for SEO optimization and performance.
 - **Modern UI/UX:** Designed with a clean, minimal, and modern look to attract and engage visitors.
+- **Google Analytics Integration:** Tracks user traffic, behavior & site performance for data-driven decisions.
+
 
 ## Technologies Used
 
