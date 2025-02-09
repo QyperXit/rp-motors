@@ -3,10 +3,13 @@ import { easeInOut, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useContext } from "react";
 import { FadeIn } from "../../util/variants";
-import FloatingItems from "../content/FloatingItems";
+import dynamic from "next/dynamic";
 import ResponsiveContactButton from "../content/ResponsiveContactButton";
 import ServiceList from "../content/ServiceList";
 import { SearchContext } from "../context/search";
+
+const FloatingItems = dynamic(() => import("../content/FloatingItems"), { ssr: false });
+
 
 const Hero = () => {
   const { searchActive } = useContext(SearchContext);
