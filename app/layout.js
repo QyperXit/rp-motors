@@ -24,7 +24,7 @@ export const metadata = {
         siteName: "R P Motors",
         images: [
             {
-                url: "https://ibb.co/zT4zXrwR",
+                url: "https://ibb.co/album/pWSMqT",
                 width: 1200,
                 height: 630,
             }
