@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "R P Motors",
-  "image": "/images/hero/carSilver.png",
+  "image": "https://www.rpmotorservices.co.uk/hero/carSilver.png",
   "description": "Professional car repair and MOT services in Birmingham",
   "address": {
     "@type": "PostalAddress",

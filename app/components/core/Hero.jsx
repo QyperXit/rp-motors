@@ -12,12 +12,7 @@ import { SearchContext } from "../context/search";
 
 const Hero = () => {
   const { searchActive } = useContext(SearchContext);
-
-  const businessSchema = {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    ...businessData,
-  };
+  const businessSchema = businessData
 
   return (
       <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id="home"

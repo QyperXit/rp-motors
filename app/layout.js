@@ -1,4 +1,7 @@
 import { Inter } from "next/font/google";
+
+import localData from "../public/schema/local-data.json";
+
 import { SearchContextProvider } from "./components/context/search";
 import "./globals.css";
 import GoogleAnalytics from "./util/analytics/GoogleAnalytics";
@@ -31,39 +34,7 @@ export const metadata = {
     },
 };
 
-const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "AutoRepair",
-    "name": "R P Motors",
-    "description":
-        "Expert car repair, maintenance, and service at R P Motors, located at 3, City Trading Estate, Icknield Square, Birmingham.",
-    "url": "https://www.rpmotorservices.co.uk/",
-    telephone: '(0121) 454-6590',
-    "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "3, City Trading Estate, Icknield Square",
-        "addressLocality": "Birmingham",
-        "postalCode": "B16 0PP",
-        "addressCountry": "GB"
-    },
-    geo: {
-        '@type': 'GeoCoordinates',
-        latitude: 52.4753,
-        longitude: -1.9214
-    },
-    "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "17:00"
-    }
-};
+const jsonLd = localData
 
 export default function RootLayout({ children }) {
     return (
