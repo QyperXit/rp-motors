@@ -46,8 +46,8 @@ const Header = () => {
       className={`${
         header ? "bg-white shadow-md py-2" : "bg-transparent shadow-none py-4"
       } fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}
-      itemScope
-      itemType="https://schema.org/AutoRepair"
+      // itemScope
+      // itemType="https://schema.org/AutoRepair"
     >
       <div className="flex flex-col mx-auto xl:container xl:flex-row xl:justify-between xl:items-center">
         <div
@@ -65,7 +65,6 @@ const Header = () => {
           >
             <Image src={"/icons/rp.png"} width={194} height={64} alt={"R P MotorServices Logo"}
                    priority
-                   itemProp="logo"
             />
           </Link>
           {/* nav open */}
@@ -102,8 +101,6 @@ const Header = () => {
             activeclass="active"
             smooth="true"
             spy="true"
-            itemProp="makesOffer"
-            title="Car Repair"
           >
             Auto Repair
           </Link>
