@@ -36,7 +36,6 @@ const Header = () => {
       }
     };
 
-    //remmove the event listener
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
@@ -47,6 +46,8 @@ const Header = () => {
       className={`${
         header ? "bg-white shadow-md py-2" : "bg-transparent shadow-none py-4"
       } fixed w-full max-w-[1920px] mx-auto z-20 transition-all duration-300`}
+      itemScope
+      itemType="https://schema.org/AutoRepair"
     >
       <div className="flex flex-col mx-auto xl:container xl:flex-row xl:justify-between xl:items-center">
         <div
@@ -55,15 +56,23 @@ const Header = () => {
         >
           {/* logo */}
           <Link
-            href={"home"}
+              to="home"
             smooth="true"
             spy="true"
             className="cursor-pointer"
+            itemProp="url"
+            title="R P MotorServices Logo"
           >
-            <Image src={"/icons/rp.png"} width={194} height={64} alt={"logo"} />
+            <Image src={"/icons/rp.png"} width={194} height={64} alt={"R P MotorServices Logo"}
+                   priority
+                   itemProp="logo"
+            />
           </Link>
           {/* nav open */}
-          <div className="cursor-pointer xl:hidden">
+          <div className="cursor-pointer xl:hidden"
+               aria-label="Toggle navigation menu"
+               aria-expanded={nav}
+               aria-controls="main-navigation">
             {nav ? (
               <BiX className="text-4xl" />
             ) : (
@@ -76,6 +85,7 @@ const Header = () => {
           className={`${
             nav ? "max-h-max py-8 xl:py-0" : "max-h-0 xl:max-h-max"
           } flex flex-col w-full bg-white gap-y-6 overflow-hidden  font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}
+          aria-label="Main navigation"
         >
           <Link
             className="cursor-pointer"
@@ -92,6 +102,8 @@ const Header = () => {
             activeclass="active"
             smooth="true"
             spy="true"
+            itemProp="makesOffer"
+            title="Car Repair"
           >
             Auto Repair
           </Link>
@@ -103,7 +115,7 @@ const Header = () => {
             smooth="true"
             spy="true"
           >
-            Testimonals
+            Testimonials
           </Link>
           <Link
             className="cursor-pointer"
@@ -139,6 +151,8 @@ const Header = () => {
             activeclass="active"
             smooth="true"
             spy="true"
+            itemProp="telephone"
+            aria-label="Call R P Motors"
           >
             Call Us
           </a>
