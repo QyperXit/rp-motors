@@ -12,17 +12,17 @@ import { SearchContext } from "../context/search";
 
 const Hero = () => {
   const { searchActive } = useContext(SearchContext);
-  const businessSchema = businessData
+  // const businessSchema = businessData
 
   return (
       <section className="h-screen xl:h-[90vh] bg-[#b2b7c2]/10" id="home"
                itemScope
                itemType="https://schema.org/AutoRepair"
       >
-        <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{__html: JSON.stringify(businessSchema)}}
-        />
+        {/*<script*/}
+        {/*    type="application/ld+json"*/}
+        {/*    dangerouslySetInnerHTML={{__html: JSON.stringify(businessSchema)}}*/}
+        {/*/>*/}
         <div className="container h-full mx-auto xl:pt-10">
           {/*  */}
           <div className="flex flex-col items-center justify-center h-full xl:flex-row xl:justify-start">
