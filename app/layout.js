@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
     metadataBase: new URL("https://www.rpmotorservices.co.uk"),
     title: "R P Motors | Birmingham's Trusted Car Repair & MOT Services",
-    description: "Professional car servicing, MOTs, and repairs in Birmingham. Family-run garage at City Trading Estate with 25+ years experience. Open Mon-Fri 9am-5pm.",
+    description: "Professional car servicing, MOTs, and repairs in Birmingham. Family-run garage at City Trading Estate with 35+ years experience. Open Mon-Fri 9am-5pm.",
     keywords: "car repair birmingham, mot birmingham, vehicle servicing, brake repair, car maintenance b16, trusted mechanics birmingham",
     authors: [{ name: "R P Motors" }],
     robots: "index, follow",
@@ -24,7 +24,7 @@ export const metadata = {
         siteName: "R P Motors",
         images: [
             {
-                url: "https://www.rpmotorservices.co.uk/_next/image?url=%2Ficons%2Frp.png&w=256&q=75",
+                url: "https://ibb.co/zT4zXrwR",
                 width: 1200,
                 height: 630,
             }
@@ -41,6 +41,7 @@ export default function RootLayout({ children }) {
         <SearchContextProvider>
             <html lang="en-GB">
             <head>
+                <link rel="icon" href="/favicon.ico" type="image/ico" />
                 <meta name="google-site-verification" content="JbYWedBRh-ZNXH90eIYUVD1RdVJPnN_IaJcKsHv6QWE"/>
                 <title>R P Motors | Birmingham's Trusted Car Repair & MOT Services</title>
             </head>
