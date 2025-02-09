@@ -69,8 +69,12 @@ export default function RootLayout({ children }) {
     return (
         <SearchContextProvider>
             <html lang="en-GB">
+            <head>
+                <meta name="google-site-verification" content="JbYWedBRh-ZNXH90eIYUVD1RdVJPnN_IaJcKsHv6QWE"/>
+                <title>R P Motors | Birmingham's Trusted Car Repair & MOT Services</title>
+            </head>
             <body className={inter.className}>
-            <GoogleAnalytics />
+            <GoogleAnalytics/>
             {/* Inject structured data for business details */}
             <Script
                 id="structured-data"

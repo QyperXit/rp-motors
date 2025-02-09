@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "R P Motors",
+  "image": "/images/hero/carSilver.png",
+  "description": "Professional car repair and MOT services in Birmingham",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "3 City Trading Estate, Icknield Square",
+    "addressLocality": "Birmingham",
+    "postalCode": "B16 0PP",
+    "addressCountry": "GB"
+  },
+  "telephone": "+441214546590",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  }
+}
+
