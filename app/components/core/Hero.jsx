@@ -8,8 +8,10 @@ import ResponsiveContactButton from "../content/ResponsiveContactButton";
 import ServiceList from "../content/ServiceList";
 import { SearchContext } from "../context/search";
 
-const FloatingItems = dynamic(() => import("../content/FloatingItems"), { ssr: false });
-
+const FloatingItems = dynamic(() => import("../content/FloatingItems"), {
+  ssr: false, // load only on client
+  loading: () => null, // optional: show nothing until loaded
+});
 
 const Hero = () => {
   const { searchActive } = useContext(SearchContext);
@@ -74,6 +76,8 @@ const Hero = () => {
               style={{ objectFit: "contain" }}
               priority
               alt="R P Motors vehicle servicing in Birmingham"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw"
+
             />
             {/*  floating */}
             <div className="absolute hidden xl:block ">
