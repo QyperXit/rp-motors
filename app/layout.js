@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
             <html lang="en-GB">
             <head>
                 <link rel="icon" href="/favicon.ico" type="image/ico" />
+                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
                 <meta name="google-site-verification" content="JbYWedBRh-ZNXH90eIYUVD1RdVJPnN_IaJcKsHv6QWE"/>
                 <title>R P Motors | Birmingham's Trusted Car Repair & MOT Services</title>
             </head>
