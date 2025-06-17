@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useContext, useEffect, useState } from "react";
 import { BiMenuAltRight, BiX } from "react-icons/bi";
 import { useMediaQuery } from "react-responsive";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { SearchContext } from "../context/search";
 
 const Header = () => {
@@ -41,6 +41,13 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+    if (nav) {
+      setNav(false);
+    }
+  };
+
   return (
     <header
       className={`${
@@ -50,28 +57,30 @@ const Header = () => {
       // itemType="https://schema.org/AutoRepair"
     >
       <div className="flex flex-col mx-auto xl:container xl:flex-row xl:justify-between xl:items-center">
-        <div
-          onClick={() => setNav(!nav)}
-          className="flex items-center justify-between px-4"
-        >
+        <div className="flex items-center justify-between px-4">
           {/* logo */}
-          <Link
-              to="home"
-            smooth="true"
-            spy="true"
+          <div
+            onClick={scrollToTop}
             className="cursor-pointer"
             itemProp="url"
             title="R P MotorServices Logo"
           >
-            <Image src={"/icons/rp.png"} width={194} height={64} alt={"R P MotorServices Logo"}
-                   priority
+            <Image
+              src={"/icons/rp.png"}
+              width={194}
+              height={64}
+              alt={"R P MotorServices Logo"}
+              priority
             />
-          </Link>
+          </div>
           {/* nav open */}
-          <div className="cursor-pointer xl:hidden"
-               aria-label="Toggle navigation menu"
-               aria-expanded={nav}
-               aria-controls="main-navigation">
+          <div
+            className="cursor-pointer xl:hidden"
+            onClick={() => setNav(!nav)}
+            aria-label="Toggle navigation menu"
+            aria-expanded={nav}
+            aria-controls="main-navigation"
+          >
             {nav ? (
               <BiX className="text-4xl" />
             ) : (
@@ -86,15 +95,13 @@ const Header = () => {
           } flex flex-col w-full bg-white gap-y-6 overflow-hidden  font-bold xl:font-medium xl:flex-row xl:w-max xl:gap-x-8 xl:h-max xl:bg-transparent xl:pb-0 transition-all duration-150 text-center xl:text-left uppercase text-sm xl:text-[15px] xl:normal-case`}
           aria-label="Main navigation"
         >
-          <Link
+          <div
+            onClick={scrollToTop}
             className="cursor-pointer"
-            to="home"
             activeclass="active"
-            smooth="true"
-            spy="true"
           >
             Home
-          </Link>
+          </div>
           <Link
             className="cursor-pointer"
             to="cars"
