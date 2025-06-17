@@ -98,16 +98,16 @@ const Header = () => {
           <div
             onClick={scrollToTop}
             className="cursor-pointer"
-            activeclass="active"
+            activeClass="active"
           >
             Home
           </div>
           <Link
             className="cursor-pointer"
             to="cars"
-            activeclass="active"
-            smooth="true"
-            spy="true"
+            activeClass="active"
+            smooth={true}
+            spy={true}
           >
             Auto Repair
           </Link>
@@ -115,46 +115,42 @@ const Header = () => {
           <Link
             className="cursor-pointer"
             to="testimonials"
-            activeclass="active"
-            smooth="true"
-            spy="true"
+            activeClass="active"
+            smooth={true}
+            spy={true}
           >
             Testimonials
           </Link>
           <Link
             className="cursor-pointer"
             to="why"
-            activeclass="active"
-            smooth="true"
-            spy="true"
+            activeClass="active"
+            smooth={true}
+            spy={true}
           >
             Why Us
           </Link>
           <Link
             className="cursor-pointer"
             to="about"
-            activeclass="active"
-            smooth="true"
-            spy="true"
+            activeClass="active"
+            smooth={true}
+            spy={true}
           >
             About
           </Link>
           <Link
             className="cursor-pointer"
             to="contact"
-            activeclass="active"
-            smooth="true"
-            spy="true"
+            activeClass="active"
+            smooth={true}
+            spy={true}
           >
             Contact
           </Link>
           <a
             href="tel:01214546590"
             className="xl:hidden btn btn-primary btn-sm max-w-[164px] mx-auto"
-            to="/"
-            activeclass="active"
-            smooth="true"
-            spy="true"
             itemProp="telephone"
             aria-label="Call R P Motors"
           >
