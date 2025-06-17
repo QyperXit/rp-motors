@@ -34,7 +34,7 @@ const About = () => {
               src={"/images/carfixing/repair.jpg"}
               width={600}
               height={448}
-              alt=""
+              alt="Mechanic working on engine at R P Motors Birmingham"
             />
           </motion.div>
           <div className="flex items-center flex-1 xl:justify-center">
@@ -58,8 +58,9 @@ const About = () => {
                 {/* Our experienced technicians provide top-quality repairs with a
                 personal touch, ensuring your vehicle receives the best care
                 possible. */}
-                Get honest, expert care from experienced technicians who offer
-                great advice and quality repairs at affordable prices.
+                Get honest, expert care from experienced technicians in
+                Birmingham who offer great advice and quality repairs for all
+                makes, including Alfa Romeo, at affordable prices.
               </motion.p>
               {/*  */}
               <motion.div

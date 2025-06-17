@@ -1,9 +1,9 @@
 "use client";
 import { easeInOut, motion } from "framer-motion";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import React, { useContext } from "react";
 import { FadeIn } from "../../util/variants";
-import dynamic from "next/dynamic";
 import ResponsiveContactButton from "../content/ResponsiveContactButton";
 import ServiceList from "../content/ServiceList";
 import { SearchContext } from "../context/search";
@@ -40,8 +40,9 @@ const Hero = () => {
               viewport={{ once: true, amount: 0.6 }}
               className="description max-w-[550px] mx-auto xl:mx-0 mb-6 xl:mb-10"
             >
-              Enjoy reliable, affordable repairs with expert care from Josh and
-              Roy, offering friendly and trustworthy service.
+              Enjoy reliable, affordable repairs in Birmingham with expert care
+              from Josh and Roy, offering friendly, trustworthy service for all
+              makes, including Alfa Romeo.
             </motion.p>
             <motion.div
               variants={FadeIn("down", 0.6)}
@@ -75,9 +76,8 @@ const Hero = () => {
               fill
               style={{ objectFit: "contain" }}
               priority
-              alt="R P Motors vehicle servicing in Birmingham"
+              alt="Car undergoing repair at R P Motors garage in Birmingham"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 50vw"
-
             />
             {/*  floating */}
             <div className="absolute hidden xl:block ">

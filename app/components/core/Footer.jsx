@@ -21,10 +21,23 @@ const Footer = () => {
         >
           <div className="flex flex-col flex-1 gap-y-8">
             <div className="cursor-pointer">
-              <Image src={"/icons/rp.png"} width={200} height={200} alt="" />
+              <Image
+                src={"/icons/rp.png"}
+                width={200}
+                height={200}
+                alt="R P Motors Logo"
+              />
             </div>
             <div className="text-secondary">
               Get in touch today for expert car repairs!
+            </div>
+            <div className="text-secondary">
+              Your local Birmingham garage for MOT, servicing, and expert
+              repairs, including Alfa Romeo.
+            </div>
+            <div className="text-secondary">
+              R P Motors, 3 City Trading Estate, Icknield Square, Birmingham,
+              B16 0PP
             </div>
             <div className="flex flex-col font-semibold gap-y-4">
               <div className="flex items-center gap-x-[10px]">

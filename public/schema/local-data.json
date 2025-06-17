@@ -3,7 +3,7 @@
   "@type": "AutoRepair",
   "name": "R P Motors",
   "image": "https://www.rpmotorservices.co.uk/icons/rp.png",
-  "description": "Expert car repair, maintenance, and service at R P Motors, located at 3, City Trading Estate, Icknield Square, Birmingham.",
+  "description": "Expert car repair, maintenance, and service at R P Motors, including specialist Alfa Romeo repairs, located at 3, City Trading Estate, Icknield Square, Birmingham.",
   "url": "https://www.rpmotorservices.co.uk/",
   "telephone": "+441214546590",
   "address": {
@@ -20,13 +20,7 @@
   },
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     "opens": "09:00",
     "closes": "17:00"
   }
