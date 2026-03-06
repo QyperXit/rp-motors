@@ -17,29 +17,20 @@ const Header = () => {
   });
 
   useEffect(() => {
-    //add the event listener header-
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setHeader(true);
-      } else {
-        setHeader(false);
-      }
+      setHeader(window.scrollY > 40);
+      setSearchActive(window.scrollY > 800);
 
-      // search
-      if (window.scrollY > 800) {
-        setSearchActive(true);
-      } else {
-        setSearchActive(false);
-      }
       if (!DesktopMode && window.scrollY > 0 && nav) {
         setNav(false);
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  }, [DesktopMode, nav, setSearchActive]);
 
   const scrollToTop = () => {
     scroll.scrollToTop();
