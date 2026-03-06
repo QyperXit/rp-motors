@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://www.rpmotorservices.co.uk/sitemap.xml

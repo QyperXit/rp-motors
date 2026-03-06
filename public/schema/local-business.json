@@ -2,8 +2,9 @@
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   "name": "R P Motors",
-  "image": "https://www.rpmotorservices.co.uk/hero/carSilver.png",
+  "image": "https://www.rpmotorservices.co.uk/images/hero/carSilver.png",
   "description": "Professional car repair, MOT, and servicing in Birmingham for various makes, including expert Alfa Romeo service.",
+  "url": "https://www.rpmotorservices.co.uk",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "3 City Trading Estate, Icknield Square",

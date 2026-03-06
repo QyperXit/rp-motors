@@ -1,5 +1,5 @@
 import Brands from "./Brands";
-import GeneralSlider from "./GeneralSlider ";
+import GeneralSlider from "./GeneralSlider";
 import Services from "./Services";
 
 const SwipeSlider = () => {

@@ -17,11 +17,9 @@ export default function Home() {
       <About />
       <Why />
       <Testimonial />
-      {/* <Cta /> */}
       <MapLocation />
       <Footer />
       <BackToTopBtn />
-      {/* <div className="h-[4000px]"></div> */}
     </main>
   );
 }

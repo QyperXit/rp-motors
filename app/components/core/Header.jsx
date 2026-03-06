@@ -98,7 +98,6 @@ const Header = () => {
           <div
             onClick={scrollToTop}
             className="cursor-pointer"
-            activeClass="active"
           >
             Home
           </div>

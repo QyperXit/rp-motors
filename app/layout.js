@@ -1,62 +1,96 @@
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 import localData from "../public/schema/local-data.json";
 
 import { SearchContextProvider } from "./components/context/search";
 import "./globals.css";
 import GoogleAnalytics from "./util/analytics/GoogleAnalytics";
-import Script from "next/script";
 
+import {
+  DEFAULT_SOCIAL_IMAGE,
+  GOOGLE_SITE_VERIFICATION,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TITLE,
+  SITE_URL,
+} from "./util/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
+/** @type {import("next").Metadata} */
 export const metadata = {
-    metadataBase: new URL("https://www.rpmotorservices.co.uk"),
-    title: "R P Motors | Birmingham's Trusted Car Repair & MOT Services",
-    description: "Professional car servicing, MOTs, and repairs in Birmingham. Family-run garage at City Trading Estate with 35+ years experience. Open Mon-Fri 9am-5pm.",
-    keywords: "car repair birmingham, mot birmingham, vehicle servicing, brake repair, car maintenance b16, trusted mechanics birmingham",
-    authors: [{ name: "R P Motors" }],
-    robots: "index, follow",
-    openGraph: {
-        title: "R P Motors | Birmingham Car Repair,Service & MOT Centre",
-        description: "Free car inspection, MOTs, and repairs in Birmingham City Centre. ",
-        url: "https://www.rpmotorservices.co.uk",
-        siteName: "R P Motors",
-        images: [
-            {
-                url: "https://ibb.co/album/pWSMqT",
-                width: 1200,
-                height: 630,
-            }
-        ],
-        locale: "en_GB",
-        type: "website",
+  metadataBase: new URL(SITE_URL),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  alternates: {
+    canonical: "/",
+  },
+  keywords:
+    "car repair birmingham, mot birmingham, vehicle servicing, brake repair, car maintenance b16, trusted mechanics birmingham",
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  referrer: "origin-when-cross-origin",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
     },
+  },
+  verification: {
+    google: GOOGLE_SITE_VERIFICATION,
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
+  openGraph: {
+    title: SITE_TITLE,
+    description:
+      "Free car inspection, MOTs, and repairs in Birmingham City Centre.",
+    url: "/",
+    siteName: SITE_NAME,
+    images: [
+      {
+        url: DEFAULT_SOCIAL_IMAGE,
+        width: 512,
+        height: 512,
+        alt: `${SITE_NAME} logo`,
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [DEFAULT_SOCIAL_IMAGE],
+  },
 };
 
-const jsonLd = localData
+const jsonLd = localData;
 
 export default function RootLayout({ children }) {
-    return (
+  return (
+    <html lang="en-GB">
+      <body className={inter.className}>
         <SearchContextProvider>
-            <html lang="en-GB">
-            <head>
-                <link rel="icon" href="/favicon.ico" type="image/ico" />
-                <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-                <meta name="google-site-verification" content="JbYWedBRh-ZNXH90eIYUVD1RdVJPnN_IaJcKsHv6QWE"/>
-                <title>R P Motors | Birmingham's Trusted Car Repair & MOT Services</title>
-            </head>
-            <body className={inter.className}>
-            <GoogleAnalytics/>
-            {/* Inject structured data for business details */}
-            <Script
-                id="structured-data"
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
-            {children}
-            </body>
-            </html>
+          <GoogleAnalytics />
+          <Script
+            id="structured-data"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          />
+          {children}
         </SearchContextProvider>
-    );
+      </body>
+    </html>
+  );
 }
